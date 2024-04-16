@@ -1,18 +1,6 @@
-# Chatbot Deployment with Flask and JavaScript
 
-In this tutorial we deploy the chatbot I created in [this](https://github.com/python-engineer/pytorch-chatbot) tutorial with Flask and JavaScript.
-
-This gives 2 deployment options:
-- Deploy within Flask app with jinja2 template
-- Serve only the Flask prediction API. The used html and javascript files can be included in any Frontend application (with only a slight modification) and can run completely separate from the Flask App then.
-
-## Initial Setup:
-This repo currently contains the starter files.
-
-Clone repo and create a virtual environment
-```
-$ git clone https://github.com/python-engineer/chatbot-deployment.git
-$ cd chatbot-deployment
+$ git clone https://github.com/https://github.com/pinkypatel2316/chatbot.git
+$ cd chatbot
 $ python3 -m venv venv
 $ . venv/bin/activate
 ```
@@ -26,27 +14,26 @@ $ (venv) python
 >>> import nltk
 >>> nltk.download('punkt')
 ```
-Modify `intents.json` with different intents and responses for your Chatbot
 
 Run
 ```
 $ (venv) python train.py
-```
-This will dump data.pth file. And then run
-the following command to test it in the console.
-```
+
+
+
+
+
+
 $ (venv) python chat.py
 ```
 
-Now for deployment follow my tutorial to implement `app.py` and `app.js`.
 
-## Watch the Tutorial
-[![Alt text](https://img.youtube.com/vi/a37BL0stIuM/hqdefault.jpg)](https://youtu.be/a37BL0stIuM)  
-[https://youtu.be/a37BL0stIuM](https://youtu.be/a37BL0stIuM)
+![w1](https://github.com/pinkypatel2316/chatbot/assets/167156241/9dd3235b-a928-45d4-a078-435d16759d00)
 
-## Note
-In the video we implement the first approach using jinja2 templates within our Flask app. Only slight modifications are needed to run the frontend separately. I put the final frontend code for a standalone frontend application in the [standalone-frontend](/standalone-frontend) folder.
 
-## Credits:
-This repo was used for the frontend code:
-https://github.com/hitchcliff/front-end-chatjs
+
+![w1](https://github.com/pinkypatel2316/chatbot/assets/167156241/fa7a3599-344b-4de1-b361-9285dd02a2b9)
+
+![w2](https://github.com/pinkypatel2316/chatbot/assets/167156241/1ba94772-5e2d-4c2a-855f-f9520e960777)
+![w4](https://github.com/pinkypatel2316/chatbot/assets/167156241/cedd8aed-89d7-46dd-999e-9379d0fd5259)
+![w5](https://github.com/pinkypatel2316/chatbot/assets/167156241/b9a9bcb4-be64-49fc-8c21-b3feb63fbc58)
